@@ -58,7 +58,7 @@ test('House should be destroyed', () => {
 
 })
 
-// 03. Массив строений, где работают больше 500 людей
+// 04. Массив строений, где работают больше 500 людей
 // test.skip('buildings with correct staff count', () => {
 //
 //     let buildings = getBuildingsWithStaffCountGreaterThen(newCity.governmentBuildings, 500)
