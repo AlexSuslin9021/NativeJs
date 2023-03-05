@@ -1,20 +1,30 @@
-export type CityType={
+export type CityType = {
     title: string,
     houses: Array<housesType>,
-    governmentBuildings: Array<>,
+    governmentBuildings: governmentBuildingsType[],
     citizensNumber: number
 }
-type housesType={
-    buildedAt:number
-    repaired:boolean
-    address:adressType
+type housesType = {
+    buildedAt: number
+    repaired: boolean
+    address: adressType
 }
-type adressType={
-    number:number
-    street:streetType
+type adressType = {
+    number: number
+    street: streetType
 }
 
 type streetType = {
-    title:string
+    title: string
+}
+type governmentBuildingsType = {
+    type: string
+    budget: number
+    staffCount: number
+    address: {
+        street: {
+            title: string
+        }
+    }
 }
 

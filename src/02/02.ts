@@ -25,3 +25,5 @@ export function demolishHousesOnTheStreet(city:CityType, street: string){
   return city.houses= city.houses.filter(h=>h.address.street.title !==street)
 
 }
+
+
